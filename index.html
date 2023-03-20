@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Notifications component created in HTML, CSS and JavaScript"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <div class="notifications">
+        <div class="notifications__title--container">
+          <h1 class="notifications__title">
+            Notifications
+            <span class="notifications__title--notification-count">3</span>
+          </h1>
+          <p class="notifications__mark-as-read">Mark all as read</p>
+        </div>
+        <div class="notifications__container">
+          <div class="notifications__container--card new">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="User Profile"
+              class="notifications__container--card-img"
+            />
+            <div class="notifications__container--card-notification-container">
+              <div class="notifications__container--card-notification">
+                <span class="notifications__container--card-name"
+                  >Mark Webber</span
+                >
+                reacted to your recent post
+                <b class="notifications__container--card-post">
+                  My first tournament today!
+                </b>
+                <div
+                  class="notifications__container--card-new-notification"
+                ></div>
+              </div>
+              <h2 class="notifications__container--card-notification--age">
+                1m ago
+              </h2>
+            </div>
+          </div>
+          <div class="notifications__container--card new">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="User Profile"
+              class="notifications__container--card-img"
+            />
+            <div class="notifications__container--card-notification-container">
+              <div class="notifications__container--card-notification">
+                <span class="notifications__container--card-name"
+                  >Angela Gray</span
+                >
+                followed you
+                <div
+                  class="notifications__container--card-new-notification"
+                ></div>
+              </div>
+              <h2 class="notifications__container--card-notification--age">
+                5m ago
+              </h2>
+            </div>
+          </div>
+          <div class="notifications__container--card new">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="User Profile"
+              class="notifications__container--card-img"
+            />
+            <div class="notifications__container--card-notification-container">
+              <div class="notifications__container--card-notification">
+                <span class="notifications__container--card-name">
+                  Jacob Thompson
+                </span>
+                has joined your group
+                <b class="notifications__container--card-group">Chess Club</b>
+                <div
+                  class="notifications__container--card-new-notification"
+                ></div>
+              </div>
+              <h2 class="notifications__container--card-notification--age">
+                1 day ago
+              </h2>
+            </div>
+          </div>
+          <div class="notifications__container--card">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="User Profile"
+              class="notifications__container--card-img"
+            />
+            <div class="notifications__container--card-notification-container">
+              <div class="notifications__container--card-notification">
+                <span class="notifications__container--card-name">
+                  Rizky Hasanuddin
+                </span>
+                sent you a private message
+              </div>
+              <h2 class="notifications__container--card-notification--age">
+                5 days ago
+              </h2>
+              <div class="notifications__container--card-message-container">
+                <p class="notifications__container--card-message">
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="notifications__container--card">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="User Profile"
+              class="notifications__container--card-img"
+            />
+            <div class="notifications__container--card-notification-container">
+              <div class="notifications__container--card-notification">
+                <span class="notifications__container--card-name">
+                  Kimberly Smith
+                </span>
+                commented on your picture
+              </div>
+              <h2 class="notifications__container--card-notification--age">
+                5m ago
+              </h2>
+            </div>
+            <div class="notifications__container--card-image-container">
+              <img src="./assets/images/image-chess.webp" alt="Chess" />
+            </div>
+          </div>
+          <div class="notifications__container--card">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="User Profile"
+              class="notifications__container--card-img"
+            />
+            <div class="notifications__container--card-notification-container">
+              <div class="notifications__container--card-notification">
+                <span class="notifications__container--card-name">
+                  Nathan Peterson
+                </span>
+                reacted to your recent post
+                <b class="notifications__container--card-post"
+                  >5 end-game strategies to increase your win rate</b
+                >
+              </div>
+              <h2 class="notifications__container--card-notification--age">
+                2 weeks ago
+              </h2>
+            </div>
+          </div>
+          <div class="notifications__container--card">
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="User Profile"
+              class="notifications__container--card-img"
+            />
+            <div class="notifications__container--card-notification-container">
+              <div class="notifications__container--card-notification">
+                <span class="notifications__container--card-name"
+                  >Anna Kim</span
+                >
+                left the group
+                <b class="notifications__container--card-group">Chess Club</b>
+              </div>
+              <h2 class="notifications__container--card-notification--age">
+                2 weeks ago
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const markAsRead = document.querySelector(".notifications__mark-as-read");
+      const newNotificationCard = document.querySelectorAll(
+        ".notifications__container--card"
+      );
+      const newNotificationDot = document.querySelectorAll(
+        ".notifications__container--card-new-notification"
+      );
+      const notificationCount = document.querySelector(
+        ".notifications__title--notification-count"
+      );
+
+      markAsRead.addEventListener("click", () => {
+        // remove card background
+        for (let i = 0; i < newNotificationCard.length; i++) {
+          newNotificationCard[i].classList.remove("new");
+        }
+
+        for (let i = 0; i < newNotificationDot.length; i++) {
+          newNotificationDot[i].style.display = "none";
+        }
+
+        // set notif count to 0
+        notificationCount.innerHTML = "0";
+      });
+    </script>
+  </body>
+</html>
